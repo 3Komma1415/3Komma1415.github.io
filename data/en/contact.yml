@@ -2,16 +2,16 @@
 contact:
   title : Contact
   # Contact details
-  last_name : Gerhart
-  first_name : Paul 
-  address_1 : "Vorgartenstraße 159/1/26"
-  address_2 : "1020 Wien"
-  email : "mail@paul-gerhart.de"
-  email_anon : "mail [at] paul-gerhart.de"
-  homepage : "https://paul-gerhart.de"
-  ust_id : "DE 358114582"
-  ust_id_description : "Tax ID"
-  linkedin: "https://www.linkedin.com/in/paul-gerhart"
-  scholar: "https://scholar.google.com/citations?hl=de&user=Zbv2SacAAAAJ"
-  dblp: "https://dblp.org/pid/350/5886.html"
+  last_name : Thomas
+  first_name : Julian Thomas
+  address_1 : "Zaunkönigstraße 15"
+  address_2 : "85051 Ingolstadt"
+  email : "julian.thomas@fau.de"
+  email_anon : "julian.thomas [at] fau.de"
+  homepage : "https://3komma1415.github.io/jttwebpage/"
+  #ust_id : "DE 358114582"
+  #ust_id_description : "Tax ID"
+  #linkedin: "https://www.linkedin.com/in/paul-gerhart"
+  #scholar: "https://scholar.google.com/citations?hl=de&user=Zbv2SacAAAAJ"
+  #dblp: "https://dblp.org/pid/350/5886.html"
 
