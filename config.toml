@@ -32,7 +32,7 @@ weight = 11
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/jttlogo.svg"
+logo = "images/jttlogo.pdf"
 portrait = "images/portrait.jpg"
 author = "Julian Thomas Thomas"
 title = "Julian Thomas Thomas"
