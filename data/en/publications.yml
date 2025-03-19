@@ -2,7 +2,7 @@ publications :
   title: Publications
   items : 
       - title : "Automated Analysis and Synthesis of Message Authentication Codes"
-        year : ""
+        year : "2025"
         authors : "Stefan Milius, Dominik Paulus, Lutz Schröder, Dominique Schröder, Julian Thomas"
         published : CSF
         has_info : true 

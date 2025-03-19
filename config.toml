@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "https://www.paul-gerhart.de"
-title = "Paul Gerhart"
+title = "Julian Thomas Thomas"
 theme = "PGTheme"
 # disable language
 disableLanguages = []
@@ -32,10 +32,10 @@ weight = 11
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/PGLogoHighContrast.svg"
+logo = "images/jttlogo.svg"
 portrait = "images/portrait.jpg"
-author = "Paul Gerhart"
-title = "Paul Gerhart"
+author = "Julian Thomas Thomas"
+title = "Julian Thomas Thomas"
 ustid = ""
 
 [mediaTypes]
@@ -59,4 +59,4 @@ languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
-copyright = "Copyright &copy; 2024 Paul Gerhart"
+copyright = "Copyright &copy; 2025 Julian Thomas Thomas"
