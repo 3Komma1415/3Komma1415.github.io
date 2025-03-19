@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://www.paul-gerhart.de"
+baseURL = "https://3komma1415.github.io/jttwebpage/"
 title = "Julian Thomas Thomas"
 theme = "PGTheme"
 # disable language
