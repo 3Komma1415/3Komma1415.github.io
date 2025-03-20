@@ -57,6 +57,6 @@ home = ["HTML", "TEX"]
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/english"
+contentDir = "content"
 weight = 1
 copyright = "Copyright &copy; 2025 Julian Thomas Thomas"
