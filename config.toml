@@ -41,8 +41,8 @@ title = "Julian Thomas"
     [params.head]
         author = "Julian Thomas"
         custom_css = "/custom.css"
-        description = "Hi, I'm Matilda"
-        keywords = ["cryptography", "academic", "ETH", "security", "doctorate"]
+        description = "Hi, I'm Julian"
+        keywords = ["cryptography", "security", "FAU"]
 
     [params.navigation]
         show_navigation = true
