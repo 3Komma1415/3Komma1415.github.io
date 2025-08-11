@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Julian Thomas</title><link>/</link><description>Recent content on Julian Thomas</description><generator>Hugo</generator><language>en</language><copyright>© 2025 by Julian Thomas Thomas. &lt;a href='/imprint'>Imprint&lt;/a>.</copyright><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;p>
+I am a PhD student at the &lt;a href="https://www.chaac.tf.fau.eu" target="_blank">Chair of Applied Cryptography&lt;/a> research group at &lt;a href="https://www.fau.eu" target="_blank">Friedrich-Alexander-Universität Erlangen-Nürnberg&lt;/a> in Germany, under the supervision of &lt;a href="https://www.dominique-schroeder.de" target="_blank">Dominique Schröder&lt;/a>.
+&lt;/p>
+&lt;p>
+I use formal methods to advance cryptographic constructions and protocols, ensuring that rigorous theory translates into practical, efficient, and secure systems.
+My work involves formalizing cryptographic primitives, constructions, protocols, and definitions, as well as exploring the theoretical relationships between them.
+My goal is to build upon these theoretical insights to enhance efficiency and strengthen security guarantees in real-world cryptographic applications.
+&lt;/p></description></item><item><title>Curriculum Vitae</title><link>/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/cv/</guid><description>&lt;h2>Education&lt;/h2>
+&lt;ul>
+ 
+ &lt;li>
+ &lt;strong>Doctoral Student&lt;/strong>, Friedrich-Alexander University Erlangen-Nürnberg &lt;br>
+ (03/2023 - present)&lt;br>
+ Cryptography&lt;br>
+ 
+ Supervisor: Dominique Schröder
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>Master of Science&lt;/strong>, Friedrich-Alexander University Erlangen-Nürnberg &lt;br>
+ (10/2020 - 03/2023)&lt;br>
+ Computer Science&lt;br>
+ 
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>Bachelor of Science&lt;/strong>, Friedrich-Alexander University Erlangen-Nürnberg &lt;br>
+ (10/2016 - 09/2020)&lt;br>
+ Computer Science&lt;br>
+ 
+ &lt;/li>
+ 
+&lt;/ul>
+
+&lt;h2>Work&lt;/h2>
+&lt;ul>
+ 
+ &lt;li>
+ &lt;strong>University Research Assistant&lt;/strong>&lt;br>
+ Friedrich-Alexander University Erlangen-Nürnberg&lt;br>
+ (03/2023 - present)&lt;br>
+ Applied Cryptography
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>Student Employee&lt;/strong>&lt;br>
+ Friedrich-Alexander University Erlangen-Nürnberg&lt;br>
+ (10/2018 - 03/2023)&lt;br>
+ Teaching assistant
+ &lt;/li>
+ 
+&lt;/ul>
+
+&lt;h2>Research Visits&lt;/h2>
+&lt;ul>
+ 
+ &lt;li>
+ Research Visit — TU Wien, Austria (03/2025)&lt;br>
+ Host: Dominique Schröder
+ &lt;/li>
+ 
+ &lt;li>
+ Research Visit — TU Wien, Austria (12/2024)&lt;br>
+ Host: Dominique Schröder
+ &lt;/li>
+ 
+ &lt;li>
+ Research Visit — TU Wien, Austria (10/2024)&lt;br>
+ Host: Dominique Schröder
+ &lt;/li>
+ 
+&lt;/ul>
+
+&lt;h2>Community Service External Reviews (Selected)&lt;/h2>
+&lt;ul>
+ 
+ &lt;li>
+ &lt;strong>Advances in Cryptology (CRYPTO)&lt;/strong>&lt;br>
+ 2024, 2025
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>ACM Conference on Computer and Communications Security (CCS)&lt;/strong>&lt;br>
+ 2024, 2025
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>Public Key Cryptography (PKC)&lt;/strong>&lt;br>
+ 2023, 2024
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>European Symposium on Research in Computer Security (ESORICS)&lt;/strong>&lt;br>
+ 2023, 2024, 2025
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>IEEE Computer Security Foundations Symposium (CSF)&lt;/strong>&lt;br>
+ 2023
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>ACM Transactions on Privacy and Security&lt;/strong>&lt;br>
+ 2024
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>Conference on Applied Cryptography and Network Security (ACNS)&lt;/strong>&lt;br>
+ 2023
+ &lt;/li>
+ 
+&lt;/ul></description></item><item><title>Imprint</title><link>/imprint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/imprint/</guid><description>&lt;p>Angaben gemäß § 5 TMG&lt;/p>
+&lt;p>Julian Thomas Thomas
+Zaunkönigstraße 15
+85051 Ingolstadt&lt;/p>
+&lt;h3 id="vertreten-durch">Vertreten durch:&lt;/h3>
+&lt;p>Julian Thomas Thomas&lt;/p>
+&lt;h3 id="kontakt">Kontakt:&lt;/h3>
+&lt;p>Telefon:
+E-Mail: julian [dot] thomas [at] fau [dot] de&lt;/p>
+&lt;h2 id="haftungsausschluss">Haftungsausschluss:&lt;/h2>
+&lt;h3 id="haftung-für-inhalte">Haftung für Inhalte&lt;/h3>
+&lt;p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;/p></description></item><item><title>Publications</title><link>/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/publications/</guid><description>&lt;h2>Publications&lt;/h2>
+&lt;ul>
+ 
+ &lt;li>
+ &lt;strong>Automated Analysis and Synthesis of Message Authentication Codes&lt;/strong> (2025)&lt;br>
+ Stefan Milius, Dominik Paulus, Lutz Schröder, Dominique Schröder, Julian Thomas &lt;br> CSF
+ 
+ 
+ 
+ &lt;/li>
+ 
+&lt;/ul></description></item><item><title>Talks</title><link>/talks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/</guid><description>&lt;h2>Talks&lt;/h2>
+&lt;ul>
+ 
+ &lt;li>
+ &lt;strong>Automated Analysis and Synthesis of Message Authentication Codes&lt;/strong> (2025)&lt;br>
+ CSF, Santa Cruz, California, USA
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;strong>Automated Analysis and Synthesis of Message Authentication Codes&lt;/strong> (2024)&lt;br>
+ SECURENET, Dublin, Ireland
+ &lt;/li>
+ 
+&lt;/ul></description></item><item><title>Teaching</title><link>/teaching/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/teaching/</guid><description>&lt;h2>Teaching&lt;/h2>
+
+&lt;h3>Teaching Activities&lt;/h3>
+&lt;ul>
+ 
+ &lt;li>&lt;strong>Introduction to Algorithms and Data Structures (B.Sc.)&lt;/strong>&lt;br>
+ (Summer term 25): Teaching assistant and lecturer&lt;/li>
+ 
+ &lt;li>&lt;strong>Crypto Project&lt;/strong>&lt;br>
+ (Winter term 24/25): Organiser&lt;/li>
+ 
+ &lt;li>&lt;strong>Introduction to Algorithms and Data Structures (B.Sc.)&lt;/strong>&lt;br>
+ (Summer term 24): Teaching assistant and lecturer&lt;/li>
+ 
+ &lt;li>&lt;strong>Crypto Project&lt;/strong>&lt;br>
+ (Winter term 23/24): Organiser&lt;/li>
+ 
+ &lt;li>&lt;strong>Introduction to Algorithms and Data Structures (B.Sc.)&lt;/strong>&lt;br>
+ (Summer term 23): Teaching assistant and lecturer&lt;/li>
+ 
+&lt;/ul>
+
+&lt;h3>Supervised Students&lt;/h3>
+&lt;ul>
+ 
+ &lt;li>Katharina Schambach — Bachelor Thesis (2025):&lt;br>
+ &lt;em>Minimal Assumptions for Atomic Swaps&lt;/em>&lt;/li>
+ 
+ &lt;li>Malavika Radhakrishnan — Master Thesis (2025):&lt;br>
+ &lt;em>Scamming Scammers with LLMs&lt;/em>&lt;/li>
+ 
+&lt;/ul></description></item></channel></rss>
