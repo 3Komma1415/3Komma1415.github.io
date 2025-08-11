@@ -1,0 +1,17 @@
+<h2>{{ with .Site.Data.teaching.teaching }}{{ .title }}{{ end }}</h2>
+
+<h3>{{ .Site.Data.teaching.lectures.title }}</h3>
+<ul>
+  {{ range .Site.Data.teaching.lectures.items }}
+    <li><strong>{{ .subject }}</strong><br>
+    ({{ .semester }}): {{ .position }}</li>
+  {{ end }}
+</ul>
+
+<h3>{{ .Site.Data.teaching.students.title }}</h3>
+<ul>
+  {{ range .Site.Data.teaching.students.items }}
+    <li>{{ .name }} — {{ .degree }} ({{ .date }}):<br>
+    <em>{{ .topic }}</em></li>
+  {{ end }}
+</ul>

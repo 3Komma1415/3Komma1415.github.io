@@ -1,8 +1,0 @@
-talks:
-  title: Talks
-  items :
-    - title: "Automated Analysis and Synthesis of Message Authentication Codes"
-      abstract: "Work that was published at CSF 2025."
-      year: 2024
-      stage: "SECURENET"
-      location: "Dublin, Ireland"

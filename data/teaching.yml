@@ -1,0 +1,38 @@
+teaching:
+  title: Teaching
+
+lectures:
+  title: Teaching Activities
+  items :
+    - subject : Introduction to Algorithms and Data Structures (B.Sc.) 
+      kind: Lecture
+      semester : Summer term 25
+      position : Teaching assistant and lecturer
+    - subject : Crypto Project
+      kind: Project
+      semester : Winter term 24/25
+      position : Organiser
+    - subject : Introduction to Algorithms and Data Structures (B.Sc.) 
+      kind: Lecture
+      semester : Summer term 24
+      position : Teaching assistant and lecturer
+    - subject : Crypto Project
+      kind: Project
+      semester : Winter term 23/24
+      position : Organiser
+    - subject : Introduction to Algorithms and Data Structures (B.Sc.) 
+      kind: Lecture
+      semester : Summer term 23
+      position : Teaching assistant and lecturer
+
+students:
+  title : Supervised Students
+  items:
+    - name: Katharina Schambach
+      date: 2025
+      degree: Bachelor Thesis
+      topic: "Minimal Assumptions for Atomic Swaps"
+    - name: Malavika Radhakrishnan
+      date: 2025
+      degree: Master Thesis
+      topic: "Scamming Scammers with LLMs"

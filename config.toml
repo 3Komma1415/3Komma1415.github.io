@@ -1,62 +1,94 @@
-################################# Default configuration ###################
-baseURL = "https://3komma1415.github.io/jttwebpage/"
-title = "Julian Thomas Thomas"
-theme = "PGTheme"
-# disable language
-disableLanguages = []
-timeout = "10m"
-disableKinds = ['rss']
 
-################### English Navigation ########################
-
-[[Languages.en.menu.main]]
-name = "CV"
-url = "/cv"
-weight = 1
-
-[[Languages.en.menu.main]]
-name = "Publications"
-url = "/publications"
-weight = 2
-
-[[Languages.en.menu.main]]
-name = "Talks"
-url = "/talks"
-weight = 3
+# Global options
+baseURL = "/"
+canonifyURLs = true
+copyright = "© 2025 by Julian Thomas Thomas. <a href='/imprint'>Imprint</a>."
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy"]
+languageCode = "en"
+theme = "barks"
+title = "Julian Thomas"
 
 
-[[Languages.en.menu.main]]
-name = "Imprint"
-url = "imprint"
-weight = 11
 
-############################# Default Parameters ##########################
+# Main menu
+[[menu.main]]
+    name = "About"
+    url  = "/about"
+    weight = 2
+[[menu.main]]
+    name = "Publications"
+    url  = "/publications"
+    weight = 2
+[[menu.main]]
+    name = "Talks"
+    url  = "/talks"
+    weight = 2
+[[menu.main]]
+    name = "Teaching"
+    url  = "/teaching"
+    weight = 2
+
+[[menu.main]]
+    name = "CV"
+    url  = "/cv"
+    weight = 3
+
+
+
+
+# Customization options
 [params]
-logo = "images/jttlogo.svg"
-portrait = "images/portrait.jpg"
-author = "Julian Thomas Thomas"
-title = "Julian Thomas Thomas"
-ustid = ""
 
-[mediaTypes]
-[mediaTypes."application/x-tex"]
-suffixes = ["tex"]
+    [params.head]
+        author = "Julian Thomas"
+        custom_css = "/custom.css"
+        description = "Hi, I'm Matilda"
+        keywords = ["cryptography", "academic", "ETH", "security", "doctorate"]
 
-[outputFormats]
-[outputFormats.TEX]
-mediaType = "application/x-tex"
-baseName = "index"
-isPlainText = true
-notAlternative = true
+    [params.navigation]
+        show_navigation = true
 
-[outputs]
-home = ["HTML", "TEX"]
+    [params.footer]
+        show_footer = true
+
+    [params.typography]
+#        title_font = "Urbanist"
+        title_font = "Cutive Mono"
+        body_font = "Source Sans Pro"
+
+    [params.colors]
+        theme_color = "#333333"
+        background_color = "#fcfbf9"
+        text_color = "#333333"
+        link_color = "#800080"
 
 
-################################ English Language ########################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 1
-copyright = "Copyright &copy; 2025 Julian Thomas Thomas"
+    [params.social.github]
+        name = "GitHub"
+        class = "fab fa-github"
+        url = "https://github.com/3Komma1415"
+        weight = 2
+    [params.social.google_scholar]
+        name = "Google Scholar"
+        class = "ai ai-google-scholar-square"
+        url = "https://scholar.google.com/citations?user=qCPdTnoAAAAJ&hl=de&authuser=2"
+        weight = 3
+    [params.social.institution]
+        name = "My institution"
+        class = "fas fa-university"
+        url = "https://www.chaac.tf.fau.de"
+        weight = 5
+
+
+
+# Options for Markdown renderer
+[markup]
+
+    [markup.goldmark.renderer]
+        unsafe = true
+        xHTML = true
+
+    [markup.highlight]
+        style = 'dracula'
+

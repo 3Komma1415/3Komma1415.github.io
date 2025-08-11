@@ -1,0 +1,9 @@
+<h2>{{ .Site.Data.talks.talks.title }}</h2>
+<ul>
+  {{ range .Site.Data.talks.talks.items }}
+    <li>
+      <strong>{{ .title }}</strong> ({{ .year }})<br>
+      {{ .stage }}, {{ .location }}
+    </li>
+  {{ end }}
+</ul>

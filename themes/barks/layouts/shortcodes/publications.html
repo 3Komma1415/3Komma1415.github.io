@@ -1,0 +1,12 @@
+<h2>{{ .Site.Data.publications.publications.title }}</h2>
+<ul>
+  {{ range .Site.Data.publications.publications.items }}
+    <li>
+      <strong>{{ .title }}</strong> ({{ .year }})<br>
+      {{ .authors }} <br> {{ .published }}
+      {{ if .has_info }}
+        {{ with .pdf }}<br><a href="{{ . }}">PDF</a>{{ end }}
+      {{ end }}
+    </li>
+  {{ end }}
+</ul>

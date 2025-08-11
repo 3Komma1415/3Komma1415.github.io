@@ -1,0 +1,44 @@
+<h2>{{ .Site.Data.education.education.title }}</h2>
+<ul>
+  {{ range .Site.Data.education.education.items }}
+    <li>
+      <strong>{{ .degree }}</strong>, {{ .institution }} <br>
+      ({{ .date }})<br>
+      {{ .subject }}<br>
+      {{ with .supervisor }}
+      Supervisor: {{ . }}{{ end }}
+    </li>
+  {{ end }}
+</ul>
+
+<h2>{{ .Site.Data.work.work.title }}</h2>
+<ul>
+  {{ range .Site.Data.work.work.items }}
+    <li>
+      <strong>{{ .name }}</strong><br>
+      {{ .employer }}<br>
+      ({{ .date }})<br>
+      {{ .topics }}
+    </li>
+  {{ end }}
+</ul>
+
+<h2>{{ .Site.Data.research_visits.research_visits.title }}</h2>
+<ul>
+  {{ range .Site.Data.research_visits.research_visits.items }}
+    <li>
+      {{ .role }} — {{ .university }}, {{ .country }} ({{ .date }})<br>
+      Host: {{ .host }}
+    </li>
+  {{ end }}
+</ul>
+
+<h2>{{ .Site.Data.communityservice.communityserviceexternal.title }}</h2>
+<ul>
+  {{ range .Site.Data.communityservice.communityserviceexternal.items }}
+    <li>
+      <strong>{{ .conference }}</strong><br>
+      {{ .year }}
+    </li>
+  {{ end }}
+</ul>
