@@ -1,6 +1,7 @@
 
 # Global options
-baseURL = "/"
+baseURL = "https://3Komma1415.github.io/jttwebpage/"
+relativeURLs = true
 canonifyURLs = true
 copyright = "© 2025 by Julian Thomas Thomas. <a href='/imprint'>Imprint</a>."
 defaultContentLanguage = "en"
