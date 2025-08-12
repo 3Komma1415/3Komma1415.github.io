@@ -14,5 +14,5 @@ My goal is to build upon these theoretical insights to enhance efficiency and st
 </p>
 
 <p>
-My [fiancé](https://lme.tf.fau.de/person/lsschneider/) does machine learning!
+My (fiancé)[https://lme.tf.fau.de/person/lsschneider/] does machine learning!
 </p>
