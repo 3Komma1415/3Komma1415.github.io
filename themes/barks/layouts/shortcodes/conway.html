@@ -1,0 +1,103 @@
+<style>
+  :root { --size: 36px; --gap: 6px; }
+  .wrap { display:flex; flex-direction:column; align-items:center; gap:16px; }
+  .grid {
+    display:grid; grid-template-columns: repeat(8, var(--size));
+    grid-template-rows: repeat(8, var(--size)); gap: var(--gap);
+  }
+  .cell {
+    width: var(--size); height: var(--size); border-radius:8px;
+    background:#ffffff; cursor:pointer;
+    outline:1px solid #000000;
+    transition: transform .06s ease, background .12s ease, outline-color .12s ease;
+  }
+  .cell.alive { background:#800080; outline-color:#000000; transform: scale(1.03); }
+  .controls { display:flex; gap:10px; justify-content:center; }
+  button {
+    border:0; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:600;
+    background:#334155; color:#e2e8f0;
+  }
+  button.primary { background:#06b6d4; color:#083344; }
+  button:disabled { opacity:.6; cursor:not-allowed; }
+  .hint { font-size:12px; opacity:.75; text-align:center; }
+</style>
+
+<div class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="controls">
+    <button id="start" class="primary">Start</button>
+    <button id="stop" disabled>Stop</button>
+  </div>
+</div>
+
+<script>
+(() => {
+  const N = 8;
+  let grid = Array.from({length:N}, () => Array(N).fill(0));
+  let timer = null;
+  const intervalMs = 250;
+
+  const gridEl = document.getElementById('grid');
+  const startBtn = document.getElementById('start');
+  const stopBtn  = document.getElementById('stop');
+
+  const cells = [];
+  for (let r=0; r<N; r++) {
+    for (let c=0; c<N; c++) {
+      const div = document.createElement('div');
+      div.className = 'cell';
+      div.dataset.r = r; div.dataset.c = c;
+      div.addEventListener('click', () => {
+        grid[r][c] ^= 1;
+        draw();
+      });
+      gridEl.appendChild(div);
+      cells.push(div);
+    }
+  }
+
+  function draw() {
+    for (const el of cells) {
+      const r = +el.dataset.r, c = +el.dataset.c;
+      el.classList.toggle('alive', !!grid[r][c]);
+    }
+  }
+
+  function neighbors(r, c) {
+    let cnt = 0;
+    for (let dr=-1; dr<=1; dr++) for (let dc=-1; dc<=1; dc++) {
+      if (dr===0 && dc===0) continue;
+      const rr = (r + dr + N) % N;
+      const cc = (c + dc + N) % N;
+      cnt += grid[rr][cc];
+    }
+    return cnt;
+  }
+
+  function step() {
+    const next = Array.from({length:N}, () => Array(N).fill(0));
+    for (let r=0; r<N; r++) for (let c=0; c<N; c++) {
+      const n = neighbors(r,c);
+      next[r][c] = (grid[r][c] ? (n===2 || n===3) : (n===3)) ? 1 : 0;
+    }
+    grid = next;
+    draw();
+  }
+
+  startBtn.addEventListener('click', () => {
+    if (timer) return;
+    timer = setInterval(step, intervalMs);
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+  });
+
+  stopBtn.addEventListener('click', () => {
+    clearInterval(timer); timer = null;
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+  });
+
+  grid[4][2]=grid[4][3]=grid[4][4]=grid[3][4]=grid[2][3]=1;
+  draw();
+})();
+</script>
