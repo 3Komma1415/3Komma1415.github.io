@@ -14,6 +14,5 @@ My goal is to build upon these theoretical insights to enhance efficiency and st
 </p>
 
 <p>
-I am pursuing my PhD under the supervision of <a href="https://www.dominique-schroeder.de"target="_blank">Dominique Schröder</a> since 2023.
-Prior to my PhD, I earned a Master of Science (M.Sc.) and Bachelor of Science (B.Sc.) in Computer Science from <a href="https://www.fau.eu" target="_blank">Friedrich-Alexander-University Erlangen-Nürnberg</a> between 2016 and 2023.
+My [fiancé](https://lme.tf.fau.de/person/lsschneider/) does machine learning!
 </p>
