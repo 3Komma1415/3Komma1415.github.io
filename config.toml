@@ -1,6 +1,6 @@
 
 # Global options
-baseURL = "https://3komma1415.github.io/"
+baseURL = "https://www.julian-thomas-thomas.de"
 relativeURLs = true
 canonifyURLs = true
 copyright = "© 2025 by Julian Thomas Thomas. <a href='/imprint'>Imprint</a>."
