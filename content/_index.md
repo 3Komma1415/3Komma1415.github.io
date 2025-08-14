@@ -12,3 +12,5 @@ Hi, I’m Julian,
 - Email: julian [dot] thomas [at] fau [dot] de
 
 If you want to chat, feel free to reach out :​)
+
+{{< analytics >}}
