@@ -5,6 +5,8 @@ communityserviceexternal:
     year: 2024, 2025
   - conference: ACM Conference on Computer and Communications Security (CCS)
     year: 2024, 2025
+  - conference: Usenix Security Symposium (USENIX)
+    year: 2026
   - conference: Public Key Cryptography (PKC)
     year: 2023, 2024
   - conference: European Symposium on Research in Computer Security (ESORICS)
