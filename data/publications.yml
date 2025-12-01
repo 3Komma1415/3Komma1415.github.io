@@ -1,6 +1,14 @@
 publications : 
   title: Publications
   items : 
+      - title : "1-Adaptive Weak Pseudorandom Functions"
+        year : "2025"
+        authors : "Davide Li Calsi, Dominique Schröder, Julian Thomas"
+        published : Preprint
+        has_info : true 
+        abstract : ""  
+        pdf: "https://eprint.iacr.org/2025/2167.pdf"
+  items : 
       - title : "Automated Analysis and Synthesis of Message Authentication Codes"
         year : "2025"
         authors : "Stefan Milius, Dominik Paulus, Lutz Schröder, Dominique Schröder, Julian Thomas"
