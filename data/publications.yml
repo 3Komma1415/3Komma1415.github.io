@@ -14,4 +14,4 @@ publications :
         published : CSF
         has_info : true 
         abstract : ""  
-        pdf: ""
+        pdf: "https://eprint.iacr.org/2025/1165.pdf"
