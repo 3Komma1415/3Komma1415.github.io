@@ -8,7 +8,6 @@ publications :
         has_info : true 
         abstract : ""  
         pdf: "https://eprint.iacr.org/2025/2167.pdf"
-  items : 
       - title : "Automated Analysis and Synthesis of Message Authentication Codes"
         year : "2025"
         authors : "Stefan Milius, Dominik Paulus, Lutz Schröder, Dominique Schröder, Julian Thomas"
