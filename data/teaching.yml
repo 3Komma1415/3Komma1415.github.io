@@ -4,10 +4,14 @@ teaching:
 lectures:
   title: Teaching Activities
   items :
+    - subject : Cryptography in Secure Messaging
+      kind : Seminar
+      semester : Winter term 25/26
+      position : Organiser
     - subject : Introduction to Algorithms and Data Structures (B.Sc.) 
       kind: Lecture
       semester : Summer term 25
-      position : Teaching assistant and lecturer
+      position : Teaching assistant
     - subject : Crypto Project
       kind: Project
       semester : Winter term 24/25

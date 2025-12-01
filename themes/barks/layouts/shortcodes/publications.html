@@ -2,11 +2,13 @@
 <ul>
   {{ range .Site.Data.publications.publications.items }}
     <li>
-      <strong>{{ .title }}</strong> ({{ .year }})<br>
-      {{ .authors }} <br> {{ .published }}
-      {{ if .has_info }}
-        {{ with .pdf }}<br><a href="{{ . }}">PDF</a>{{ end }}
+      {{ if and .has_info .pdf }}
+        <strong><a href="{{ .pdf }}">{{ .title }}</a></strong>
+      {{ else }}
+        <strong>{{ .title }}</strong>
       {{ end }}
+      ({{ .year }})<br>
+      {{ .authors }} <br> {{ .published }}
     </li>
   {{ end }}
 </ul>
