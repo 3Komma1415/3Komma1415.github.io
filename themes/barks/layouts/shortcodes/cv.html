@@ -2,9 +2,9 @@
 <ul>
   {{ range .Site.Data.education.education.items }}
     <li>
-      <strong>{{ .degree }}</strong>, {{ .institution }} <br>
-      ({{ .date }})<br>
-      {{ .subject }}<br>
+      <strong>{{ .degree }}</strong><br>
+      {{ .institution }}<br>
+      {{ .subject }} ({{ .date }})<br>
       {{ with .supervisor }}
       Supervisor: {{ . }}{{ end }}
     </li>
