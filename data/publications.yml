@@ -1,6 +1,13 @@
 publications : 
   title: Publications
-  items : 
+  items :
+      - title : "Atomic Swaps with Relaxed Assumptions"
+        year : "2026"
+        authors : "Paul Roesler, Katharina Schambach, and Julian Thomas"
+        published : CiC
+        has_info : true 
+        abstract : ""  
+        pdf: ""
       - title : "1-Adaptive Weak Pseudorandom Functions"
         year : "2025"
         authors : "Davide Li Calsi, Dominique Schröder, Julian Thomas"
