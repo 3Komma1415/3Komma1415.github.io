@@ -7,7 +7,7 @@ publications :
         published : CiC
         has_info : true 
         abstract : ""  
-        pdf: ""
+        pdf: "https://eprint.iacr.org/2026/746.pdf"
       - title : "1-Adaptive Weak Pseudorandom Functions"
         year : "2025"
         authors : "Davide Li Calsi, Dominique Schröder, Julian Thomas"
