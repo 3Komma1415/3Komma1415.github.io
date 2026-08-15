@@ -1,6 +1,12 @@
 publications : 
   title: Publications
   items :
+      - title : "Symmetric and Asymmetric Anonymous Authenticated KEM"
+        year : "2026"
+        authors : "Benedikt Auerbach, Doreen Riepel, Paul Rösler, Lea Thiemt, and Julian Thomas"
+        published : "to appear at Asiacrypt 2026"
+        has_info : true
+        abstract : ""
       - title : "Atomic Swaps with Relaxed Assumptions"
         year : "2026"
         authors : "Paul Roesler, Katharina Schambach, and Julian Thomas"
@@ -12,8 +18,9 @@ publications :
         year : "2025"
         authors : "Davide Li Calsi, Dominique Schröder, Julian Thomas"
         published : Preprint
-        has_info : true 
-        abstract : ""  
+        preprint : true
+        has_info : true
+        abstract : ""
         pdf: "https://eprint.iacr.org/2025/2167.pdf"
       - title : "Automated Analysis and Synthesis of Message Authentication Codes"
         year : "2025"
