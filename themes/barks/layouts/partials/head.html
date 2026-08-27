@@ -3,7 +3,6 @@
 
     <!-- Add Hugo version and build date -->
     {{ hugo.Generator }}
-    <meta name="date" content="{{ hugo.BuildDate }}">
 
     <!-- Set meta tags -->
     <meta charset="utf-8">
@@ -13,36 +12,64 @@
     <meta name="referrer" content="no-referrer">
     <meta name="theme-color" content="{{ .Site.Params.colors.theme_color | default "#333333" }}">
 
-    <!-- Add author, description and keywords -->
-    <meta name="author" content="{{ .Site.Params.head.Author }}">
-    <meta name="description" content="{{ .Site.Params.head.Description }}" />
-    {{ with .Site.Params.head.keywords }}
-        <meta name="keywords" content="{{ delimit .  ", " }}" />
+    {{/* Page specific title, description and preview image, with site wide fallbacks */}}
+    {{ $title := "" }}
+    {{ if .IsHome }}
+        {{ $title = printf "%s – %s" .Site.Title (.Site.Params.head.tagline | default .Site.Params.head.description) }}
+    {{ else }}
+        {{ $title = printf "%s · %s" .Title .Site.Title }}
     {{ end }}
+    {{ $description := .Params.description | default .Site.Params.head.description }}
+    {{ $image := absURL (.Params.image | default .Site.Params.head.image | default "/avatar.jpg") }}
 
     <!-- Define title -->
-    {{ if .IsHome}}
-        <title>{{- .Site.Title -}}&nbsp;•&nbsp;Home</title>
-    {{ else }}
-        <title>{{- .Site.Title -}}&nbsp;•&nbsp;{{- .Title -}}</title>
+    <title>{{ $title }}</title>
+
+    <!-- Add author, description and keywords -->
+    <meta name="author" content="{{ .Site.Params.head.author }}">
+    <meta name="description" content="{{ $description }}">
+    {{ with .Site.Params.head.keywords }}
+        <meta name="keywords" content="{{ delimit . ", " }}">
     {{ end }}
 
-    <!-- Define OpenGraph (OG) properties -->
-    <meta property="og:title" content="{{ .Site.Title }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="{{ .Site.Params.head.description }}" />
+    <!-- Allow search engines to index the page and to show full snippets and large previews -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-    <!-- Add title for Twitter-->
-    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <!-- Define OpenGraph (OG) properties -->
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:type" content="{{ if .IsHome }}profile{{ else }}website{{ end }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="{{ $image }}">
+    <meta property="og:image:alt" content="{{ .Site.Params.person.name | default .Site.Title }}">
+    {{ if .IsHome }}
+        <meta property="profile:first_name" content="{{ .Site.Params.person.given_name }}">
+        <meta property="profile:last_name" content="{{ .Site.Params.person.family_name }}">
+    {{ end }}
+
+    <!-- Add card metadata for Twitter/X, Mastodon, Slack, ... -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="{{ $image }}">
 
     <!-- Define canonical link -->
     <link rel="canonical" href="{{ .Permalink }}">
-    
+
     <!-- Set favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="icon" href="{{ "favicon/favicon.ico" | absURL }}" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | absURL }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-icon-180x180.png" | absURL }}">
+    <link rel="manifest" href="{{ "favicon/manifest.json" | absURL }}">
+
+    <!-- Point search engines at the sitemap and the RSS feed -->
+    <link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">
+    {{ with .OutputFormats.Get "rss" }}
+        <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+    {{ end }}
 
     <!-- Generate CSS file from SCSS and include -->
     {{ $template := resources.Get "styles.scss" }}
@@ -51,7 +78,7 @@
 
     <!-- Include custom CSS file -->
     {{ with .Site.Params.head.custom_css }}
-        <link href="{{ . }}" rel="stylesheet">
+        <link href="{{ . | absURL }}" rel="stylesheet">
     {{ end }}
 
     <!-- Load Google fonts -->
@@ -84,6 +111,9 @@
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></noscript>
     {{ end }}
+
+    <!-- Structured data (schema.org) so search engines understand who the site is about -->
+    {{- partial "schema.html" . -}}
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="92c74741-3fca-49f9-aa16-cae5e0eeabe6"></script>
 

@@ -1,4 +1,8 @@
 
 <header>
-    <a href="/" class="title">{{ .Site.Title | safeHTML }}</a>    
+    {{ if .IsHome }}
+        <h1 class="title"><a href="{{ "/" | relURL }}">{{ .Site.Title | safeHTML }}</a></h1>
+    {{ else }}
+        <div class="title"><a href="{{ "/" | relURL }}">{{ .Site.Title | safeHTML }}</a></div>
+    {{ end }}
 </header>

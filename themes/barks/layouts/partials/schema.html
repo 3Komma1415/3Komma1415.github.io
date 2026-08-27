@@ -1,0 +1,75 @@
+{{/*
+    schema.org / JSON-LD structured data.
+
+    Tells search engines that this site belongs to one specific person, which
+    profiles elsewhere on the web are the same person (sameAs) and what each
+    page is. Everything is driven by [params.person] in config.toml.
+*/}}
+
+{{ $base := absURL "/" }}
+{{ $p := .Site.Params.person }}
+
+{{ $affiliation := dict
+    "@type" "CollegeOrUniversity"
+    "name" $p.affiliation
+    "url" $p.affiliation_url
+}}
+{{ if $p.department }}
+    {{ $affiliation = merge $affiliation (dict "department" (dict
+        "@type" "Organization"
+        "name" $p.department
+        "url" $p.department_url
+    )) }}
+{{ end }}
+
+{{ $person := dict
+    "@type" "Person"
+    "@id" (printf "%s#person" $base)
+    "name" $p.name
+    "givenName" $p.given_name
+    "familyName" $p.family_name
+    "jobTitle" $p.job_title
+    "description" .Site.Params.head.description
+    "url" $base
+    "image" (absURL (.Site.Params.head.image | default "/avatar.jpg"))
+    "email" (printf "mailto:%s" $p.email)
+    "affiliation" $affiliation
+    "worksFor" $affiliation
+    "knowsAbout" $p.knows_about
+    "sameAs" $p.same_as
+}}
+{{ with $p.alternate_name }}
+    {{ $person = merge $person (dict "alternateName" .) }}
+{{ end }}
+
+{{ $website := dict
+    "@type" "WebSite"
+    "@id" (printf "%s#website" $base)
+    "url" $base
+    "name" .Site.Title
+    "description" .Site.Params.head.description
+    "inLanguage" .Site.LanguageCode
+    "publisher" (dict "@id" (printf "%s#person" $base))
+}}
+
+{{ $pageType := "WebPage" }}
+{{ if .IsHome }}{{ $pageType = "ProfilePage" }}{{ end }}
+{{ if eq .RelPermalink "/about/" }}{{ $pageType = "AboutPage" }}{{ end }}
+{{ if in (slice "/publications/" "/talks/" "/teaching/") .RelPermalink }}{{ $pageType = "CollectionPage" }}{{ end }}
+
+{{ $page := dict
+    "@type" $pageType
+    "@id" .Permalink
+    "url" .Permalink
+    "name" (cond .IsHome .Site.Title .Title)
+    "description" (.Params.description | default .Site.Params.head.description)
+    "isPartOf" (dict "@id" (printf "%s#website" $base))
+    "about" (dict "@id" (printf "%s#person" $base))
+    "inLanguage" .Site.LanguageCode
+}}
+{{ if .IsHome }}
+    {{ $page = merge $page (dict "mainEntity" (dict "@id" (printf "%s#person" $base))) }}
+{{ end }}
+
+{{ $graph := slice $person $website $page }}
+<script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@graph" $graph) | jsonify | safeJS }}</script>

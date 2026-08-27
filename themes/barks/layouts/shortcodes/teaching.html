@@ -1,6 +1,5 @@
-<h2>{{ with .Site.Data.teaching.teaching }}{{ .title }}{{ end }}</h2>
-
-<h3>{{ .Site.Data.teaching.lectures.title }}</h3>
+{{/* The page title is rendered as the <h1>, so the sections start at <h2>. */}}
+<h2>{{ .Site.Data.teaching.lectures.title }}</h2>
 <ul>
   {{ range .Site.Data.teaching.lectures.items }}
     <li><strong>{{ .subject }}</strong><br>
@@ -8,7 +7,7 @@
   {{ end }}
 </ul>
 
-<h3>{{ .Site.Data.teaching.students.title }}</h3>
+<h2>{{ .Site.Data.teaching.students.title }}</h2>
 <ul>
   {{ range .Site.Data.teaching.students.items }}
     <li>{{ .name }} — {{ .degree }} ({{ .date }}):<br>

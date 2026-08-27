@@ -1,6 +1,5 @@
-<h2>{{ .Site.Data.publications.publications.title }}</h2>
-
-<h3>Published</h3>
+{{/* The page title is rendered as the <h1>, so the sections start at <h2>. */}}
+<h2>Published</h2>
 <ul>
   {{ range .Site.Data.publications.publications.items }}
     {{ if not .preprint }}
@@ -17,7 +16,7 @@
   {{ end }}
 </ul>
 
-<h3>Preprints</h3>
+<h2>Preprints</h2>
 <ul>
   {{ range .Site.Data.publications.publications.items }}
     {{ if .preprint }}

@@ -1,6 +1,7 @@
 ---
 title: "About"
 math: false
+description: "About Julian Thomas — PhD student at the Chair of Applied Cryptography, FAU Erlangen-Nürnberg, using formal methods to advance cryptographic constructions and protocols."
 ---
 
 <p>
@@ -14,5 +15,5 @@ My goal is to build upon these theoretical insights to enhance efficiency and st
 </p>
 
 <p>
-My <a href="https://lme.tf.fau.de/person/lsschneider/" target="_blank">fiancé</a> does machine learning!
+My <a href="https://linda-sophie-schneider.de/" target="_blank">fiancé</a> does machine learning!
 </p>

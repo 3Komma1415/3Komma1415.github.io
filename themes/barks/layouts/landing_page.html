@@ -7,7 +7,9 @@
   </div>
 
   <div class="landing-page-image">
-    <img src="{{ .Params.image }}" alt="{{ .Site.Params.header.title }}" width="221" height="331">
+    <img src="{{ .Params.image | absURL }}"
+         alt="{{ .Site.Params.person.name | default .Site.Title }}, {{ .Site.Params.person.job_title }} at the {{ .Site.Params.person.department }}"
+         width="221" height="331" fetchpriority="high">
   </div>
 </div>
 

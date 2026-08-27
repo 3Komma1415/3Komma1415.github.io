@@ -1,14 +1,19 @@
 
 # Global options
 baseURL = "https://www.julian-thomas-thomas.de"
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
+canonifyURLs = false
 copyright = "© 2025 by Julian Thomas Thomas. <a href='/imprint'>Imprint</a>."
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
+enableRobotsTXT = true
 languageCode = "en"
 theme = "barks"
 title = "Julian Thomas"
+
+[sitemap]
+    changefreq = "monthly"
+    priority = 0.5
 
 
 
@@ -41,8 +46,44 @@ title = "Julian Thomas"
     [params.head]
         author = "Julian Thomas"
         custom_css = "/custom.css"
-        description = "Hi, I'm Julian"
+        # Shown as the Google result snippet for the home page (~155 characters)
+        description = "Julian Thomas is a PhD candidate at the Chair of Applied Cryptography, FAU Erlangen-Nürnberg, working on formal methods and provable security."
+        # Appended to the site title in the <title> of the home page
+        tagline = "PhD Candidate in Applied Cryptography, FAU Erlangen-Nürnberg"
+        # Preview image used for Open Graph / Twitter cards
+        image = "/avatar.jpg"
         keywords = ["cryptography", "security", "FAU"]
+
+    # Used for the schema.org Person markup in partials/schema.html
+    [params.person]
+        name = "Julian Thomas"
+        alternate_name = "Julian Thomas Thomas"
+        given_name = "Julian"
+        family_name = "Thomas"
+        job_title = "PhD Candidate"
+        email = "julian.thomas@fau.de"
+        affiliation = "Friedrich-Alexander-Universität Erlangen-Nürnberg"
+        affiliation_url = "https://www.fau.eu"
+        department = "Chair of Applied Cryptography"
+        department_url = "https://www.chaac.tf.fau.de"
+        knows_about = [
+            "Cryptography",
+            "Applied Cryptography",
+            "Provable Security",
+            "Formal Methods",
+            "Cryptographic Protocols",
+            "IT Security",
+        ]
+        # Every profile that belongs to the same person. Google uses these to
+        # connect the site with the person behind it — add new ones here.
+        same_as = [
+            "https://www.chaac.tf.fau.de/person/julian-thomas/",
+            "https://scholar.google.com/citations?user=qCPdTnoAAAAJ",
+            "https://github.com/3Komma1415",
+            # "https://orcid.org/0000-0000-0000-0000",
+            # "https://dblp.org/pid/XXX/XXXXX.html",
+            # "https://www.linkedin.com/in/...",
+        ]
 
     [params.navigation]
         show_navigation = true
@@ -89,4 +130,3 @@ title = "Julian Thomas"
 
     [markup.highlight]
         style = 'dracula'
-

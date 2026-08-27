@@ -1,5 +1,6 @@
 ---
 title: Imprint
+description: "Imprint and contact information for julian-thomas-thomas.de."
 ---
 
 Angaben gemäß § 5 TMG

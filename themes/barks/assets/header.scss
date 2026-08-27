@@ -9,11 +9,18 @@ header {
 header .title {
     font-family: $title-font, serif;
     font-size: 52px;
+    font-weight: normal;
+    text-align: center;
     text-decoration: none;
     margin: 0;
     padding: 0;
     color: $text-color;
     font-display: swap;
+}
+
+header .title a {
+    color: inherit;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
