@@ -7,7 +7,7 @@ publications :
         published : "Asiacrypt 2026"
         has_info : true
         abstract : ""
-	pdf : "https://eprint.iacr.org/2026/1926"
+        pdf : "https://eprint.iacr.org/2026/1926"
       - title : "Atomic Swaps with Relaxed Assumptions"
         year : "2026"
         authors : "Paul Roesler, Katharina Schambach, and Julian Thomas"
@@ -29,4 +29,4 @@ publications :
         published : CSF
         has_info : true 
         abstract : ""  
-        pdf: "https://eprint.iacr.org/2025/1165.pdf"
+        pdf: "https://eprint.iacr.org/2025/1165"
