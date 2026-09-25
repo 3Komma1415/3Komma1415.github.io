@@ -1,0 +1,23 @@
+prototypes:
+  title: Prototypes
+  intro: >-
+    As part of my research I build prototypes that translate theory into practice,
+    demonstrate the feasibility of new ideas, and make results reproducible through
+    open-source implementations released alongside the corresponding papers.
+  disclaimer: >-
+    These implementations are only proofs-of-concept. They have not undergone any
+    security audits, are not hardened against side-channel attacks, and must not be
+    used in production environments. Run them only in controlled, research, or
+    testing settings.
+  items:
+    - name: Symmetric and Asymmetric Anonymous Authenticated KEM
+      description: Prototype implementation of our symmetric and asymmetric anonymous authenticated key encapsulation mechanisms.
+      venue: Asiacrypt 2026
+      code: https://github.com/3Komma1415/sym-asym-anon-auth-kem-prototype
+      paper: https://eprint.iacr.org/2026/1926
+
+    - name: AutomatedMACs
+      description: Tooling for the automated analysis and synthesis of message authentication codes.
+      venue: CSF 2025
+      code: https://github.com/3Komma1415/AutomatedMACs
+      paper: https://eprint.iacr.org/2025/1165

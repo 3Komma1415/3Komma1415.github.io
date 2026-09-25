@@ -1,0 +1,17 @@
+{{/* The page title is rendered as the <h1>, so the section starts at <h2>. */ -}}
+{{ $data := site.Data.prototypes.prototypes -}}
+<h2>{{ $data.title }}</h2>
+
+<p>{{ $data.intro }}</p>
+
+<p class="prototype-warning"><strong>Warning:</strong> {{ $data.disclaimer }}</p>
+
+<ul>
+  {{ range $data.items }}
+    <li>
+      <strong>{{ .name }}</strong>{{ with .venue }} ({{ . }}){{ end }}<br>
+      {{ .description }}<br>
+      <a href="{{ .code }}">Code</a>{{ with .paper }} · <a href="{{ . }}">Paper</a>{{ end }}
+    </li>
+  {{ end }}
+</ul>
