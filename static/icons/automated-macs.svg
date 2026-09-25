@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Automated analysis of MACs">
-<title>Automated analysis of MACs</title>
-
-<path d="M26.40 15.05 L26.40 18.95 L23.33 19.48 L23.23 19.72 L25.02 22.27 L22.27 25.02 L19.72 23.23 L19.48 23.33 L18.95 26.40 L15.05 26.40 L14.52 23.33 L14.28 23.23 L11.73 25.02 L8.98 22.27 L10.77 19.72 L10.67 19.48 L7.60 18.95 L7.60 15.05 L10.67 14.52 L10.77 14.28 L8.98 11.73 L11.73 8.98 L14.28 10.77 L14.52 10.67 L15.05 7.60 L18.95 7.60 L19.48 10.67 L19.72 10.77 L22.27 8.98 L25.02 11.73 L23.23 14.28 L23.33 14.52 Z" stroke="#333333" stroke-width="2.3"/>
-<circle cx="17" cy="17" r="3.2" stroke="#333333" stroke-width="2.1"/>
-<path d="M33 25.5 h17 a5 5 0 0 1 5 5 v14 a5 5 0 0 1 -5 5 h-17 l-9.5 -12 Z" stroke="#800080" stroke-width="2.5"/>
-<circle cx="41" cy="37.5" r="3.1" fill="#800080"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Automated analysis of MACs"><title>Automated analysis of MACs</title>
+<circle cx="32" cy="32" r="29" fill="none" stroke="#800080" stroke-width="2.2" opacity="0.45"/>
+<g transform="translate(32,32) scale(0.7938) translate(-32.500,-31.650)"><defs>
+  <mask id="g"><rect width="64" height="64" fill="#fff"/><circle cx="25" cy="25" r="4.8" fill="#000"/></mask>
+  <mask id="t"><rect width="64" height="64" fill="#fff"/><circle cx="41.5" cy="40" r="3" fill="#000"/></mask>
+</defs>
+<path d="M22.09 11.31 L27.91 11.31 L28.09 15.91 L28.47 16.05 L31.57 12.64 L36.03 16.38 L33.21 20.03 L33.41 20.38 L37.98 19.76 L38.99 25.49 L34.49 26.47 L34.42 26.86 L38.31 29.33 L35.40 34.37 L31.32 32.22 L31.02 32.48 L32.42 36.87 L26.95 38.86 L25.20 34.60 L24.80 34.60 L23.05 38.86 L17.58 36.87 L18.98 32.48 L18.68 32.22 L14.60 34.37 L11.69 29.33 L15.58 26.86 L15.51 26.47 L11.01 25.49 L12.02 19.76 L16.59 20.38 L16.79 20.03 L13.97 16.38 L18.43 12.64 L21.53 16.05 L21.91 15.91 Z" fill="#2f2f3a" mask="url(#g)"/>
+<path d="M35 31.5 h14.5 a4.5 4.5 0 0 1 4.5 4.5 v11.5 a4.5 4.5 0 0 1 -4.5 4.5 h-14.5 l-9 -10.5 Z" fill="#800080" mask="url(#t)"/></g>
 </svg>
