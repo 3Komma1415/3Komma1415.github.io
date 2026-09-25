@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Anonymous authenticated KEM"><title>Anonymous authenticated KEM</title>
-<circle cx="32" cy="32" r="29" fill="none" stroke="#800080" stroke-width="2.2" opacity="0.45"/>
-<g transform="translate(32,32) scale(1.0157) translate(-32.500,-33.050)"><defs><mask id="k"><rect width="64" height="64" fill="#fff"/>
+<g transform="translate(32,32) scale(1.2318) translate(-32.500,-33.050)"><defs><mask id="k"><rect width="64" height="64" fill="#fff"/>
   <circle cx="19" cy="32.5" r="2.7" fill="#000"/><circle cx="29.5" cy="32.5" r="2.7" fill="#000"/></mask></defs>
 <rect x="11" y="24.5" width="26" height="16" rx="8" fill="#800080" mask="url(#k)"/>
 <rect x="34.5" y="29.8" width="19" height="5.4" rx="2.7" fill="#2f2f3a"/>

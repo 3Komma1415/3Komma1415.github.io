@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="1-adaptive weak PRF"><title>1-adaptive weak PRF</title>
-<circle cx="32" cy="32" r="29" fill="none" stroke="#800080" stroke-width="2.2" opacity="0.45"/>
-<g transform="translate(32,32) scale(0.7407) translate(-27.250,-36.150)"><defs><mask id="d"><rect width="64" height="64" fill="#fff"/>
+<g transform="translate(32,32) scale(0.8983) translate(-27.250,-36.150)"><defs><mask id="d"><rect width="64" height="64" fill="#fff"/>
   <circle cx="27" cy="22" r="2.6" fill="#000"/><circle cx="41" cy="22" r="2.6" fill="#000"/>
   <circle cx="34" cy="29" r="2.6" fill="#000"/>
   <circle cx="27" cy="36" r="2.6" fill="#000"/><circle cx="41" cy="36" r="2.6" fill="#000"/></mask></defs>

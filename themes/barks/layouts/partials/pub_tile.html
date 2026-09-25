@@ -2,11 +2,7 @@
 The square artwork tile shown beside an entry on the Publications page.
 Falls back to a neutral mark when an entry has no icon of its own.
 
-    icon   — path to the SVG under static/icons/
-    short  — short label under the artwork (optional)
-    alt    — accessible name for the artwork
+    icon  — path to the SVG under static/icons/
+    alt   — accessible name for the artwork
 */ -}}
-<span class="pub-tile">
-  <img src="{{ .icon | default "/icons/paper.svg" | absURL }}" alt="{{ .alt }}" width="44" height="44" loading="lazy">
-  {{- with .short }}<span class="pub-tile-label">{{ . }}</span>{{ end }}
-</span>
+<span class="pub-tile"><img src="{{ .icon | default "/icons/paper.svg" | absURL }}" alt="{{ .alt }}" width="48" height="48" loading="lazy"></span>

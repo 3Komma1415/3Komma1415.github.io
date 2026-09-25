@@ -14,7 +14,6 @@ prototypes:
       description: Prototype implementation of our symmetric and asymmetric anonymous authenticated key encapsulation mechanisms.
       venue: Asiacrypt 2026
       icon: /icons/aakem.svg
-      short: AAKEM
       code: https://github.com/3Komma1415/sym-asym-anon-auth-kem-prototype
       paper: https://eprint.iacr.org/2026/1926
 
@@ -22,6 +21,5 @@ prototypes:
       description: Tooling for the automated analysis and synthesis of message authentication codes.
       venue: CSF 2025
       icon: /icons/automated-macs.svg
-      short: AutomatedMACs
       code: https://github.com/3Komma1415/AutomatedMACs
       paper: https://eprint.iacr.org/2025/1165

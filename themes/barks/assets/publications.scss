@@ -27,34 +27,24 @@ text beside it. The landing page renders the same markup without the
 
 .pub-tile {
     flex: 0 0 auto;
-    width: 84px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 4px;
-    padding: 10px 6px;
+    justify-content: center;
+    /* Square tile: 48px of artwork with even padding all round. */
+    width: 68px;
+    height: 68px;
     background: rgba($link-color, 0.07);
     border-radius: 14px;
 }
 
 .pub-tile img {
     display: block;
-    width: 44px;
-    height: 44px;
-}
-
-.pub-tile-label {
-    font-size: 11px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    color: $text-color;
-    overflow-wrap: anywhere;
+    width: 48px;
+    height: 48px;
 }
 
 @media only screen and (max-width: 600px) {
     .icon-list li { gap: 12px; }
-    .pub-tile { width: 66px; padding: 8px 4px; }
-    .pub-tile img { width: 36px; height: 36px; }
-    .pub-tile-label { font-size: 10px; }
+    .pub-tile { width: 56px; height: 56px; border-radius: 12px; }
+    .pub-tile img { width: 40px; height: 40px; }
 }

@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Atomic swaps"><title>Atomic swaps</title>
-<circle cx="32" cy="32" r="29" fill="none" stroke="#800080" stroke-width="2.2" opacity="0.45"/>
-<g transform="translate(32,32) scale(0.7995) translate(-32.000,-32.000)"><defs>
+<g transform="translate(32,32) scale(0.9697) translate(-32.000,-32.000)"><defs>
   <mask id="a"><rect width="64" height="64" fill="#fff"/>
     <rect x="17.7" y="23.5" width="2.8" height="9.5" rx="1.4" fill="#000"/>
     <rect x="17.7" y="30.7" width="8" height="2.8" rx="1.4" fill="#000"/></mask>
