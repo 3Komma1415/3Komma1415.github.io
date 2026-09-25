@@ -9,7 +9,7 @@
 <ul class="icon-list">
   {{ range $data.items }}
     <li>
-      <i class="fab fa-github-square" aria-hidden="true"></i>
+      {{ partial "pub_tile.html" (dict "icon" .icon "short" .short "alt" .name) }}
       <span>
       <strong>{{ .name }}</strong>{{ with .venue }} ({{ . }}){{ end }}<br>
       {{ .description }}<br>

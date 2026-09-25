@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Paper">
+<title>Paper</title>
+<path d="M16 8 h20 l12 12 v36 a4 4 0 0 1 -4 4 H16 a4 4 0 0 1 -4 -4 V12 a4 4 0 0 1 4 -4 Z" stroke="#333333" stroke-width="2.6"/>
+<path d="M36 8 v12 h12" stroke="#333333" stroke-width="2.6"/>
+<path d="M21 32 H39 M21 40 H39 M21 48 H32" stroke="#800080" stroke-width="2.4"/>
+</svg>

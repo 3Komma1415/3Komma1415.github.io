@@ -2,6 +2,8 @@ publications :
   title: Publications
   items :
       - title : "Symmetric and Asymmetric Anonymous Authenticated KEM"
+        icon : "/icons/aakem.svg"
+        short : "AAKEM"
         year : "2026"
         authors : "Benedikt Auerbach, Doreen Riepel, Paul Rösler, Lea Thiemt, and Julian Thomas"
         published : "Asiacrypt 2026"
@@ -9,6 +11,8 @@ publications :
         abstract : ""
         pdf : "https://eprint.iacr.org/2026/1926"
       - title : "Atomic Swaps with Relaxed Assumptions"
+        icon : "/icons/atomic-swaps.svg"
+        short : "Atomic Swaps"
         year : "2026"
         authors : "Paul Roesler, Katharina Schambach, and Julian Thomas"
         published : CiC
@@ -16,6 +20,8 @@ publications :
         abstract : ""  
         pdf: "https://eprint.iacr.org/2026/746"
       - title : "1-Adaptive Weak Pseudorandom Functions"
+        icon : "/icons/awprf.svg"
+        short : "1-awPRF"
         year : "2025"
         authors : "Davide Li Calsi, Dominique Schröder, Julian Thomas"
         published : Preprint
@@ -24,6 +30,8 @@ publications :
         abstract : ""
         pdf: "https://eprint.iacr.org/2025/2167"
       - title : "Automated Analysis and Synthesis of Message Authentication Codes"
+        icon : "/icons/automated-macs.svg"
+        short : "AutoMAC"
         year : "2025"
         authors : "Stefan Milius, Dominik Paulus, Lutz Schröder, Dominique Schröder, Julian Thomas"
         published : CSF

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Automated analysis of MACs">
+<title>Automated analysis of MACs</title>
+
+<path d="M26.40 15.05 L26.40 18.95 L23.33 19.48 L23.23 19.72 L25.02 22.27 L22.27 25.02 L19.72 23.23 L19.48 23.33 L18.95 26.40 L15.05 26.40 L14.52 23.33 L14.28 23.23 L11.73 25.02 L8.98 22.27 L10.77 19.72 L10.67 19.48 L7.60 18.95 L7.60 15.05 L10.67 14.52 L10.77 14.28 L8.98 11.73 L11.73 8.98 L14.28 10.77 L14.52 10.67 L15.05 7.60 L18.95 7.60 L19.48 10.67 L19.72 10.77 L22.27 8.98 L25.02 11.73 L23.23 14.28 L23.33 14.52 Z" stroke="#333333" stroke-width="2.3"/>
+<circle cx="17" cy="17" r="3.2" stroke="#333333" stroke-width="2.1"/>
+<path d="M33 25.5 h17 a5 5 0 0 1 5 5 v14 a5 5 0 0 1 -5 5 h-17 l-9.5 -12 Z" stroke="#800080" stroke-width="2.5"/>
+<circle cx="41" cy="37.5" r="3.1" fill="#800080"/>
+</svg>
