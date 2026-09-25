@@ -4,13 +4,18 @@ so the landing page and the Publications page share a single copy of the markup.
 
     heading   — text for the <h2> above the list
     preprint  — true to list the preprints, false to list the published work
+    icons     — true to replace the bullets with a square icon (Publications
+                page only; the landing page keeps plain bullets)
 */}}
 {{- $preprint := .preprint }}
+{{- $icons := .icons | default false }}
 <h2>{{ .heading }}</h2>
-<ul>
+<ul{{ if $icons }} class="icon-list"{{ end }}>
   {{ range site.Data.publications.publications.items }}
     {{ if eq (default false .preprint) $preprint }}
     <li>
+      {{ if $icons }}<i class="{{ .icon | default "ai ai-open-access-square" }}" aria-hidden="true"></i>{{ end }}
+      <span>
       {{ if and .has_info .pdf }}
         <strong><a href="{{ .pdf }}">{{ .title }}</a></strong>
       {{ else }}
@@ -18,6 +23,7 @@ so the landing page and the Publications page share a single copy of the markup.
       {{ end }}
       ({{ .year }})<br>
       {{ .authors }} <br> {{ .published }}
+      </span>
     </li>
     {{ end }}
   {{ end }}
