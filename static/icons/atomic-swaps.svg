@@ -1,14 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Atomic swaps"><title>Atomic swaps</title>
-<g transform="translate(32,32) scale(0.9697) translate(-32.000,-32.000)"><defs>
-  <mask id="a"><rect width="64" height="64" fill="#fff"/>
-    <rect x="17.7" y="23.5" width="2.8" height="9.5" rx="1.4" fill="#000"/>
-    <rect x="17.7" y="30.7" width="8" height="2.8" rx="1.4" fill="#000"/></mask>
-  <mask id="b"><rect width="64" height="64" fill="#fff"/><circle cx="45" cy="32" r="3.8" fill="#000"/></mask>
+<g transform="translate(32,32) scale(0.7226) translate(-32.000,-32.750)"><g fill="#2f2f3a">
+  <rect x="12.6" y="35.2" width="2.8" height="4.6"/>
+  <rect x="12.6" y="48.2" width="2.8" height="4.6"/>
+  <rect x="6" y="26" width="16" height="9.5" rx="2.6"/>
+  <rect x="6" y="39" width="16" height="9.5" rx="2.6"/>
+  <rect x="6" y="52" width="16" height="9.5" rx="2.6"/>
+</g>
+<g fill="#800080">
+  <rect x="48.6" y="35.2" width="2.8" height="4.6"/>
+  <rect x="48.6" y="48.2" width="2.8" height="4.6"/>
+  <rect x="42" y="26" width="16" height="9.5" rx="2.6"/>
+  <rect x="42" y="39" width="16" height="9.5" rx="2.6"/>
+  <rect x="42" y="52" width="16" height="9.5" rx="2.6"/>
+</g>
+<defs>
+  <mask id="cl"><rect width="64" height="64" fill="#fff"/><circle cx="14" cy="13" r="3.4" fill="#000"/></mask>
+  <mask id="cr"><rect width="64" height="64" fill="#fff"/><circle cx="50" cy="13" r="3.4" fill="#000"/></mask>
 </defs>
-<circle cx="19" cy="32" r="10" fill="#2f2f3a" mask="url(#a)"/>
-<circle cx="45" cy="32" r="10" fill="#800080" mask="url(#b)"/>
-<path d="M19.5 20.5 Q32 10.5 44 19.8" fill="none" stroke="#2f2f3a" stroke-width="3.2" stroke-linecap="round"/>
-<path d="M47.2 22.8 L38.4 18.6 L46.3 14.4 Z" fill="#2f2f3a"/>
-<path d="M44.5 43.5 Q32 53.5 20 44.2" fill="none" stroke="#800080" stroke-width="3.2" stroke-linecap="round"/>
-<path d="M16.8 41.2 L25.6 45.4 L17.7 49.6 Z" fill="#800080"/></g>
+<circle cx="14" cy="13" r="9" fill="#2f2f3a" mask="url(#cl)"/>
+<circle cx="50" cy="13" r="9" fill="#800080" mask="url(#cr)"/>
+<path d="M25 7.5 H37.5" fill="none" stroke="#2f2f3a" stroke-width="2.9" stroke-linecap="round"/>
+<path d="M41.5 7.5 L35.6 4.4 L35.6 10.6 Z" fill="#2f2f3a"/>
+<path d="M39 18.5 H26.5" fill="none" stroke="#800080" stroke-width="2.9" stroke-linecap="round"/>
+<path d="M22.5 18.5 L28.4 15.4 L28.4 21.6 Z" fill="#800080"/></g>
 </svg>
