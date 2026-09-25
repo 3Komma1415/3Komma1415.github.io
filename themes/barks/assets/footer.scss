@@ -1,12 +1,32 @@
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+
     width: 100%;
-    text-align: center;
+    /* The former `padding-top: 1em` was always overridden by an inline style. */
+    padding: 10px 0;
     margin-bottom: 60px;
     border-top: 1px solid $text-color;
-    padding-top: 1em;
+
+    text-align: center;
     font-size: small;
     color: $text-color;
+
+    a {
+        color: $text-color;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 3px;
+    }
+
+    a:hover {
+        text-decoration-style: solid;
+        text-decoration-color: $link-color;
+    }
 
     .fas, .fab, .ai {
         font-size: large;
@@ -17,33 +37,55 @@ footer {
         color: $link-color;
         transform: scale(1.5);
     }
-
 }
 
-footer ul li a i {
+/* Row of social icons. */
+footer ul.social {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 10pt;
+    list-style: none;
+}
+
+footer ul.social li {
+    padding: 0 10px;
+    /* Icons are drawn small by the icon fonts, so scale the whole item up. */
+    transform: scale(1.5) translateY(2px);
+    transform-origin: center;
+}
+
+footer ul.social li a i {
     color: $text-color;
 }
 
-footer ul {
-	display: table;
-	margin: auto;
-    padding: 0;
+/* The clickable d20 in the footer; seven rolls open the Spielecke. */
+#d20 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
 }
 
-footer li {
-	list-style-type: none;
-	display: inline-block;
-    padding: 0px 10px;
+#d20 svg {
+    width: 100%;
+    height: 100%;
 }
 
-footer a {
-    color: $text-color;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 3px;
+#d20-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    font-weight: bold;
+    display: none;
 }
 
-footer a:hover  {
-    text-decoration-style: solid;
-    text-decoration-color: $link-color;
+@keyframes d20-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(1080deg); }
 }

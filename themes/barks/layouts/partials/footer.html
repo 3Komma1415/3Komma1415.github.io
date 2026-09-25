@@ -1,16 +1,12 @@
 {{ if not (eq .Site.Params.footer.show_footer false) }}
-<footer style="display:flex; justify-content:center; align-items:center; gap:18px; flex-wrap:wrap; padding:10px 0;">
+<footer>
 
-  {{ if isset .Site.Params "social" }}
   {{ with .Site.Params.social }}
-    <ul style="display:flex; gap:25px; margin:0; padding:10pt; list-style:none;">
+    <ul class="social">
     {{ range sort . "weight" }}
-      <li style="transform: scale(1.5) translateY(2px); transform-origin:center;">
-        <a href="{{ .url }}" title="{{ .name }}"><i class="{{ .class }}"></i></a>
-      </li>
+      <li><a href="{{ .url }}" title="{{ .name }}"><i class="{{ .class }}"></i></a></li>
     {{ end }}
     </ul>
-  {{ end }}
   {{ end }}
 
   {{/* Resolve target: params.hidden_url -> /spielecke or /spieleecke page -> fallback using base path */}}
@@ -21,19 +17,16 @@
   {{ end }}
   {{ if not $target }}{{ $target = printf "%sspieleecke/" .Site.Home.RelPermalink }}{{ end }}
 
-  <!-- Clickable D20 -->
-  <div id="d20" data-target="{{ $target }}" style="width:45px; height:45px; cursor:pointer; position:relative; display:flex; align-items:center; justify-content:center;">
-    <svg viewBox="0 0 100 100" style="width:100%; height:100%;">
+  <!-- Clickable D20: seven rolls take you to the Spielecke -->
+  <div id="d20" data-target="{{ $target }}">
+    <svg viewBox="0 0 100 100">
       <polygon points="50,19 20,68 80,68 50,19 10,26 10,75 20,68 50,95 80,68 90,75 90,26 50,19 
       10,26 20,68 80,68 90,26 50,19 50,5 10,26 10,75 50,95 90,75 90,26 50,5"
         fill="none" stroke="black" stroke-width="2.5" stroke-linejoin="round"/>
     </svg>
-    <div id="d20-num" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:11px; font-weight:bold; display:none;"></div>
+    <div id="d20-num"></div>
   </div>
 
-  <style>
-    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(1080deg); } }
-  </style>
   <script>
   (function(){
     const d20 = document.getElementById('d20');
@@ -44,7 +37,7 @@
 
     d20.addEventListener('click', () => {
       numDiv.style.display = 'none';
-      svg.style.animation = 'spin 1s linear';
+      svg.style.animation = 'd20-spin 1s linear';
       setTimeout(() => {
         svg.style.animation = '';
         const result = Math.floor(Math.random() * 20) + 1;

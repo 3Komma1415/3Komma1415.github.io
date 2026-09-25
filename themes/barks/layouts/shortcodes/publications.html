@@ -1,34 +1,3 @@
-{{/* The page title is rendered as the <h1>, so the sections start at <h2>. */}}
-<h2>Published</h2>
-<ul>
-  {{ range .Site.Data.publications.publications.items }}
-    {{ if not .preprint }}
-    <li>
-      {{ if and .has_info .pdf }}
-        <strong><a href="{{ .pdf }}">{{ .title }}</a></strong>
-      {{ else }}
-        <strong>{{ .title }}</strong>
-      {{ end }}
-      ({{ .year }})<br>
-      {{ .authors }} <br> {{ .published }}
-    </li>
-    {{ end }}
-  {{ end }}
-</ul>
-
-<h2>Preprints</h2>
-<ul>
-  {{ range .Site.Data.publications.publications.items }}
-    {{ if .preprint }}
-    <li>
-      {{ if and .has_info .pdf }}
-        <strong><a href="{{ .pdf }}">{{ .title }}</a></strong>
-      {{ else }}
-        <strong>{{ .title }}</strong>
-      {{ end }}
-      ({{ .year }})<br>
-      {{ .authors }} <br> {{ .published }}
-    </li>
-    {{ end }}
-  {{ end }}
-</ul>
+{{/* The page title is rendered as the <h1>, so the sections start at <h2>. */ -}}
+{{ partial "publications.html" (dict "heading" "Published" "preprint" false) -}}
+{{ partial "publications.html" (dict "heading" "Preprints" "preprint" true) -}}

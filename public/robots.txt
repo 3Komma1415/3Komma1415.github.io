@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://www.julian-thomas-thomas.de/sitemap.xml
