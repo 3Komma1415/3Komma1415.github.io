@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="1-adaptive weak PRF"><title>1-adaptive weak PRF</title>
-<g transform="translate(32,32) scale(0.8783) translate(-26.950,-33.450)"><defs><mask id="f"><rect width="64" height="64" fill="#fff"/>
-  <text x="34" y="36" text-anchor="middle" font-size="25" font-style="italic" font-family="Helvetica,Arial,sans-serif" font-weight="700" fill="#000">f</text></mask></defs>
-<rect x="20" y="12" width="28" height="28" rx="7.5" fill="#2f2f3a" mask="url(#f)"/>
-<path d="M4 18 H16 M4 26 H16 M4 34 H16" stroke="#2f2f3a" stroke-width="2.8" stroke-linecap="round"/>
-<path d="M14.4 14.4 L19.6 18 L14.4 21.6 Z M14.4 22.4 L19.6 26 L14.4 29.6 Z M14.4 30.4 L19.6 34 L14.4 37.6 Z" fill="#2f2f3a"/>
-<path d="M46 40.5 Q57 52 33 53 Q14 53.5 15.5 43" fill="none" stroke="#800080" stroke-width="3.6" stroke-linecap="round"/>
-<path d="M11.3 44.3 L15.8 38.6 L20.1 44.5 Z" fill="#800080"/></g>
+<g transform="translate(32,32) scale(0.7982) translate(-31.300,-32.500)"><path d="M2 17 H8.5 M2 24 H8.5 M2 31 H8.5" stroke="#2f2f3a" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M7.4 14.1 L11.9 17 L7.4 19.9 Z M7.4 21.1 L11.9 24 L7.4 26.9 Z M7.4 28.1 L11.9 31 L7.4 33.9 Z" fill="#2f2f3a"/>
+<text x="39.7" y="30.5" text-anchor="middle" font-family="Georgia,'Times New Roman',Times,serif" font-size="15.5" font-weight="600" fill="#2f2f3a"><tspan font-style="italic">F</tspan>(<tspan font-style="italic">k</tspan>,&#183;)</text>
+<path d="M60 36.5 Q62.5 47.5 36 49 Q14 50.5 13.5 40.5" fill="none" stroke="#800080" stroke-width="3.3" stroke-linecap="round"/>
+<path d="M9.5 41.8 L13.9 36.1 L18.2 42 Z" fill="#800080"/></g>
 </svg>
