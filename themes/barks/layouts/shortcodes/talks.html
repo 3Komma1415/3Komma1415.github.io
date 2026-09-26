@@ -1,9 +1,0 @@
-{{/* The page title is rendered as the <h1>, so no extra heading is needed here. */}}
-<ul>
-  {{ range .Site.Data.talks.talks.items }}
-    <li>
-      <strong>{{ .title }}</strong> ({{ .year }})<br>
-      {{ .stage }}, {{ .location }}
-    </li>
-  {{ end }}
-</ul>

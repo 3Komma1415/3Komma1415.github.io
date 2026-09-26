@@ -27,10 +27,6 @@ title = "Julian Thomas"
     url  = "/publications"
     weight = 2
 [[menu.main]]
-    name = "Talks"
-    url  = "/talks"
-    weight = 2
-[[menu.main]]
     name = "Teaching"
     url  = "/teaching"
     weight = 2
