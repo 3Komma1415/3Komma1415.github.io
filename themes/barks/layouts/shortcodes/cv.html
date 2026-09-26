@@ -19,18 +19,15 @@
       {{ .employer }}<br>
       ({{ .date }})<br>
       {{ .topics }}
-      {{ with .projects }}
-        <ul>
-          {{ range . }}
-            <li>
-              {{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}
-              — {{ .description }}<br>
-              <sm>{{ with .funding }}{{ . }}, {{ end }}{{ .date }}</sm>
-            </li>
-          {{ end }}
-        </ul>
-      {{ end }}
     </li>
+    {{/* Projects belonging to that position, listed as their own entries below it. */}}
+    {{ range .projects }}
+    <li>
+      <strong>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}</strong><br>
+      {{ .description }}<br>
+      ({{ with .funding }}{{ . }}, {{ end }}{{ .date }})
+    </li>
+    {{ end }}
   {{ end }}
 </ul>
 
