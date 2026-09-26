@@ -19,6 +19,17 @@
       {{ .employer }}<br>
       ({{ .date }})<br>
       {{ .topics }}
+      {{ with .projects }}
+        <ul>
+          {{ range . }}
+            <li>
+              {{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}
+              — {{ .description }}<br>
+              <sm>{{ with .funding }}{{ . }}, {{ end }}{{ .date }}</sm>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
     </li>
   {{ end }}
 </ul>

@@ -5,6 +5,13 @@ work:
       date : 03/2023 - present
       topics : Applied Cryptography
       employer : Friedrich-Alexander University Erlangen-Nürnberg
+      # Projects worked on during this position. Optional; add more as needed.
+      projects :
+        - name : CONFIDENTIAL6G
+          description : Confidential computing and post-quantum cryptography for 6G networks
+          funding : Horizon Europe
+          date : 03/2023 - 12/2025
+          url : https://confidential6g.eu/
 
     - name : Student Employee
       date : 10/2018 - 03/2023
