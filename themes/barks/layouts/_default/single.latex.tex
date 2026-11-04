@@ -90,41 +90,6 @@ value is written "{ {{- ... }}", the "-" trimming the space in between.
 {{- end }}
 {{- end }}
 
-{{- with $d.teaching.students }}
-
-\cvsection{ {{- partial "tex.html" .title }}}
-{{- range .items }}
-\cventry{ {{- partial "tex.html" .date }}}{\textbf{ {{- partial "tex.html" .name }}} ({{ partial "tex.html" .degree }})
-  \cvdetail{\emph{ {{- partial "tex.html" .topic }}}}}
-{{- end }}
-{{- end }}
-
-{{- with $d.teaching }}
-
-\cvsection{ {{- partial "tex.html" .teaching.title }}}
-{{- range .lectures.items }}
-\cventry{ {{- partial "tex.html" .semester }}}{\textbf{ {{- partial "tex.html" .subject }}}{{ with .kind }}, {{ partial "tex.html" . }}{{ end }}
-  \cvdetail{ {{- partial "tex.html" .position }}}}
-{{- end }}
-{{- end }}
-
-{{- with $d.talks.talks }}
-
-\cvsection{ {{- partial "tex.html" .title }}}
-{{- range .items }}
-\cventry{ {{- partial "tex.html" .year }}}{\textbf{ {{- partial "tex.html" .title }}}
-  \cvdetail{ {{- partial "tex.html" .stage }}, {{ partial "tex.html" .location }}}}
-{{- end }}
-{{- end }}
-
-{{- with $d.communityservice.communityserviceexternal }}
-
-\cvsection{ {{- partial "tex.html" .title }}}
-{{- range .items }}
-\cvitem{ {{- partial "tex.html" .conference }}}{ {{- partial "tex.html" .year }}}
-{{- end }}
-{{- end }}
-
 {{- with $d.publications.publications }}
 
 \cvsection{ {{- partial "tex.html" .title }}}
@@ -148,6 +113,41 @@ value is written "{ {{- ... }}", the "-" trimming the space in between.
 \cvsection{ {{- partial "tex.html" .title }}}
 {{- range .items }}
 \cvpub{ {{- with .code }}\href{ {{- partial "tex_url.html" . }}}{ {{- end }}{{ partial "tex.html" .name }}{{ if .code }}}{{ end }}}{ {{- partial "tex.html" .venue }}}{ {{- partial "tex.html" .description }}}
+{{- end }}
+{{- end }}
+
+{{- with $d.talks.talks }}
+
+\cvsection{ {{- partial "tex.html" .title }}}
+{{- range .items }}
+\cventry{ {{- partial "tex.html" .year }}}{\textbf{ {{- partial "tex.html" .title }}}
+  \cvdetail{ {{- partial "tex.html" .stage }}, {{ partial "tex.html" .location }}}}
+{{- end }}
+{{- end }}
+
+{{- with $d.teaching }}
+
+\cvsection{ {{- partial "tex.html" .teaching.title }}}
+{{- range .lectures.items }}
+\cventry{ {{- partial "tex.html" .semester }}}{\textbf{ {{- partial "tex.html" .subject }}}{{ with .kind }}, {{ partial "tex.html" . }}{{ end }}
+  \cvdetail{ {{- partial "tex.html" .position }}}}
+{{- end }}
+{{- end }}
+
+{{- with $d.teaching.students }}
+
+\cvsection{ {{- partial "tex.html" .title }}}
+{{- range .items }}
+\cventry{ {{- partial "tex.html" .date }}}{\textbf{ {{- partial "tex.html" .name }}} ({{ partial "tex.html" .degree }})
+  \cvdetail{\emph{ {{- partial "tex.html" .topic }}}}}
+{{- end }}
+{{- end }}
+
+{{- with $d.communityservice.communityserviceexternal }}
+
+\cvsection{ {{- partial "tex.html" .title }}}
+{{- range .items }}
+\cvitem{ {{- partial "tex.html" .conference }}}{ {{- partial "tex.html" .year }}}
 {{- end }}
 {{- end }}
 

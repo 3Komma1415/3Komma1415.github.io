@@ -1,7 +1,14 @@
-
 {{ define "main" }}
     {{ if not .Params.hide_title }}
+        {{/* Pages with a PDF version (the CV, see config.toml) show its download button next to the title. */}}
+        {{ with .OutputFormats.Get "latex" }}
+        <div class="title-row">
+            <h1>{{ $.Title | safeHTML }}</h1>
+            <a class="cv-download" href="{{ strings.TrimSuffix ".tex" .RelPermalink }}.pdf">Download as PDF</a>
+        </div>
+        {{ else }}
         <h1>{{ .Title | safeHTML }}</h1>
+        {{ end }}
     {{ end }}
     {{ .Content | safeHTML }}
 {{ end }}

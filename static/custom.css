@@ -4,6 +4,12 @@ sm {
   font-size: 0.8em; line-height: 125%; display: block; margin-top: 4px;
 }
 
-a.cv-download {
+/* Title with a button on its right (the CV's PDF download, see _default/single.html). */
+.title-row {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; margin-bottom: 0.6em;
+}
+.title-row h1 { margin: 0; }
+
+main a.cv-download {
   display: inline-block; padding: 4px 12px; border: 1px solid currentColor; border-radius: 4px; text-decoration: none;
 }
