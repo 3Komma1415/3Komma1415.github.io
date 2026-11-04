@@ -1,0 +1,10 @@
+{{/*
+Returns a data value as LaTeX text: trimmed, with the characters LaTeX treats
+specially escaped. Used by the LaTeX version of the CV (_default/single.latex.tex).
+*/}}
+{{- $s := . | string | strings.TrimSpace -}}
+{{- $s = replace $s `\` `\textbackslash ` -}}
+{{- $s = replaceRE `([&%$#_{}])` `\$1` $s -}}
+{{- $s = replace $s `~` `\textasciitilde ` -}}
+{{- $s = replace $s `^` `\textasciicircum ` -}}
+{{- return $s -}}

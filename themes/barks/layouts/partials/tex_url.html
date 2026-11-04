@@ -1,0 +1,5 @@
+{{/*
+Returns a URL for \href in the LaTeX version of the CV. The links sit inside
+macro arguments there, where hyperref needs these characters escaped.
+*/}}
+{{- return replaceRE `([%#~])` `\$1` (. | string | strings.TrimSpace) -}}

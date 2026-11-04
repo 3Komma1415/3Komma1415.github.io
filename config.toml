@@ -126,3 +126,16 @@ title = "Julian Thomas"
 
     [markup.highlight]
         style = 'dracula'
+
+
+# The CV page is also rendered as LaTeX (layouts/_default/single.latex.tex) from
+# the same data files. .github/workflows/hugo.yml compiles it to
+# /cv/cv_julian_thomas.pdf, which the CV page links to.
+[mediaTypes."application/x-tex"]
+    suffixes = ["tex"]
+
+[outputFormats.latex]
+    mediaType = "application/x-tex"
+    baseName = "cv_julian_thomas"
+    isPlainText = true
+    notAlternative = true

@@ -11,6 +11,19 @@ jobs:
           hugo-version: 'latest'
           extended: true
       - run: hugo --minify
+      # Hugo renders the CV page's data a second time as LaTeX
+      # (public/cv/cv_julian_thomas.tex, see config.toml); compile it to the PDF
+      # the CV page links to, so the download always matches the website.
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends latexmk texlive-latex-recommended lmodern tex-gyre
+      - name: Build CV PDF
+        working-directory: public/cv
+        run: |
+          latexmk -pdf -interaction=nonstopmode -halt-on-error *.tex
+          latexmk -c
+          rm *.tex
       - uses: actions/upload-pages-artifact@v3
         with: { path: ./public }
   deploy:
